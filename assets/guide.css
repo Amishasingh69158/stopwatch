@@ -1,0 +1,47 @@
+
+
+ img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+ ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+#dark_toggle_div {
+    padding-left: 70%;
+}
+
+@media  screen and (max-width: 1400px) {
+ 
+      #dark_toggle_div {
+          padding-left: 60%;
+
+    }
+
+}
+@media  screen and (max-width: 1000px) {
+ 
+      #dark_toggle_div {
+          padding-left: 50%;
+
+    }
+
+}

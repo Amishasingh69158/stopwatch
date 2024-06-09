@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+    <nav >
+        <img src="logo/Clock Logo.png" alt="Clock Logo">
+        <a id="home" class="font-white" href="index.html">HOME</a>
+        <p id="goToStopWatchIndex" class="font-white">STOPWATCH</p>
+        <p id="savedTime" class="font-white">SAVED STOP WATCH</p>
+        <div class="dropDown" id="dropDown">
+            <button class="dropBtn">SavedWatchList</button>
+            <div class="drop-content" id="drop-content"></div>
+        </div>
+        <a id="guide" class="font-white" href="guide.html">GUIDE</a>
+        <a id="contact" class="font-white" href="contactUs.html">CONTACT</a>
+        <div id="dark_toggle_div" >
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="checkbox-label">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <span class="ball"></span>
+            </label>
+        </div>
+    <div id="clockContainer">
+        <div class="stopwatch">
+            <div id="display">00:00:00</div>
+            <button id="startStopBtn">Start</button>
+            <button id="resetBtn">Reset</button>
+            <button id="lapBtn">Lap</button>
+            <div id="laps"></div>
+        </div>
+        <div id="savedTimes">
+            <form id="TimelistForm">
+                <input type="text" id="createTimeList" name="createTimeList" placeholder="Enter StopWatchList name">
+                <input type="submit" value="AddList" id="submitTimelist" class="Submitbutton">
+            </form>
+        </div>
+    </div>
+    <div class="current">
+            <h2 id="currentSaveTimeHeading">Current saved Stop Watch</h2> 
+            <div id="currentSaveTime"></div>
+    </div>
+    <div class="right-allign">
+        <h2 id="showAllSaveListHeading" class="hidden">Saved Stop Watch</h2> 
+        <div id="showAllSaveList" class="hidden"></div>
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/contact.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+    <nav>
+        <img src="logo/Clock Logo.png" alt="Clock Logo">
+        <a id="home" href="index.html">HOME</a>
+        <a id="goToStopWatch" href="home.html">STOPWATCH</a>
+        <a id="guide" href="guide.html">GUIDE</a>
+        <a id="contact" href="contactUs.html">CONTACT</a>
+        <div id="dark_toggle_div">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="checkbox-label">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <span class="ball"></span>
+            </label>
+        </div>
+    </nav>
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="formMessage" class="hidden"></div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Stopwatch Web App. All rights reserved.</p>
+    </footer>
+    <script src="assets/home.js"></script>
+    <script src="assets/contact.js"></script>
+</body>
+</html>
